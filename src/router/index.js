@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import todo from "../views/todo.vue";
 
 Vue.use(VueRouter);
 
@@ -11,7 +12,12 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
+    path: "/todo",
+    name: "todo",
+    component: todo,
+  },
+  {
+    path: "/About",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
